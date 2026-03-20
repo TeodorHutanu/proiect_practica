@@ -13,33 +13,33 @@ class User
     #[ORM\Column]
     private ?int $id = null;
 
-  
     #[ORM\Column(type: 'string', length: 100)]
     private ?string $name = null;
 
-    
     #[ORM\Column]
     private ?int $age = null;
 
     public function getName(): ?string
     {
-        return $this->name;  
+        return $this->name;
     }
 
     public function setName(?string $name): self
     {
         $this->name = $name;
+
         return $this;
     }
 
-     public function getAge(): ?int
+    public function getAge(): ?int
     {
-        return $this->age;  
+        return $this->age;
     }
 
     public function setAge(?int $age): self
     {
         $this->age = $age;
+
         return $this;
     }
 
@@ -47,6 +47,4 @@ class User
     {
         return $this->id;
     }
-
-
 }
