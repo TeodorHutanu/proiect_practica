@@ -1,3 +1,9 @@
+{% extends "base.html.twig" %}
+
+{% block title%} {{parent()}} Where is my Horse {% endblock %}
+
+{% block body %}
+
 <h1> Starshop: your monopoly-busting options for Starships parts </h1>
 <div>
 Browse through {{numberofStarships=numberofStarships-400}} Starships!
@@ -30,3 +36,4 @@ Few Starships
         </tr>
     </tabel>
 </div>
+{% endblock %}
