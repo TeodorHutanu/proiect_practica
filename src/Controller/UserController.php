@@ -11,14 +11,16 @@ class UserController extends AbstractController
     #[Route("/")] 
     public function homepage(): Response 
     {
-        $starshipsCount = 457;
-        $myship=[
-            "name" => "USS Leaf",
-            "color" => "green",
-            "status" => "MIA"
+        $horses = 457;
+        $myhorse=[
+            "name" => "Dash",
+            "color" => "Gray",
+            "status" => "Injured"
          ];
 
-        return $this->render("main/homepage.html.twig", ["numberofStarships" => $starshipsCount, "myShip" =>  $myship,]);
+        return $this->render("main/homepage.html.twig", [
+            "numberofHorses" => $horses, 
+            "myhorse" =>  $myhorse,]);
         
 
     }

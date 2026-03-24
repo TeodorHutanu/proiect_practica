@@ -4,22 +4,22 @@
 
 {% block body %}
 
-<h1> Starshop: your monopoly-busting options for Starships parts </h1>
+<h1> Horseshop: your monopoly-busting options for horses </h1>
 <div>
-Browse through {{numberofStarships=numberofStarships-400}} Starships!
-{%if numberofStarships > 400%}
+Browse through {{numberofHorses=numberofHorses-400}} Horses!
+{%if numberofHorses > 400%}
 
 <p>
-Many Starships
+Many Horses
 </p>
 
 {%endif%}
 
 
-{%if numberofStarships < 400%}
+{%if numberofHorses < 400%}
 
 <p>
-Few Starships
+Few Horses
 </p>
 
 {%endif%}
@@ -27,12 +27,12 @@ Few Starships
 </div>
 
 <div>
-    <h2>My Ship</h2>
+    <h2>My Horse</h2>
 
     <tabel>
         <tr>
             <th>name</th>
-            <td>{{ myShip.name }}</td>
+            <td>{{ myhorse.name }}</td>
         </tr>
     </tabel>
 </div>
