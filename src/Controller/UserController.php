@@ -18,6 +18,6 @@ class UserController extends AbstractController
 
         return $this->render('main/homepage.html.twig', [
             'myhorse' => $myhorse,
-            'horses' => $horses]);
+            'numberofHorses' => count($horses)]);
     }
 }

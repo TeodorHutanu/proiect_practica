@@ -19,6 +19,7 @@ class HorsesRepository
             new Horses(1, 'Iris', 'Race', 'Ready'),
             new Horses(2, 'Bob', 'Farming', 'Ready'),
             new Horses(3, 'Grace', 'Race', 'Ready'),
+            new Horses(4, 'Labes', 'Sport', 'La Fotbal'),
         ];
     }
 }
