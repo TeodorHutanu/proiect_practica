@@ -20,4 +20,9 @@ class UserController extends AbstractController
             'myhorse' => $myhorse,
             'numberofHorses' => count($horses)]);
     }
+    #[Route('/join', name: "app_join_game")]
+    public function join() : Response{
+        return $this->render("join/join.html.twig");
+    }
+
 }
